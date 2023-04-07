@@ -4,9 +4,12 @@ import { Box,
   Typography,
   Button,
   Card,
+  Link,
  } from '@mui/material'
 import logo from './images/healTracjk.jpeg'
 import doc from './images/Sprints1.jpg'
+
+
 export default function Landing() {
   return (
     <Box>
@@ -68,7 +71,7 @@ export default function Landing() {
             margin: '10px'
           }}
           >
-            Princing
+            Pricing
           </Button>
 
       </Card>
@@ -97,7 +100,7 @@ export default function Landing() {
             color:'#4169E1',
             fontWeight:'bold',
           }}
-          >Your Data</Typography>
+          > Your Data</Typography>
 
         </Box>
         <Box>
@@ -162,6 +165,24 @@ export default function Landing() {
         <img src={doc}></img>
       </Box>
     </Stack>
+    <Box sx={{ mt: 'auto', py: 2, backgroundColor: '#9fd1dd' }}>
+      <Typography variant="body2" align="center">
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <Link sx={{ p: 1 }} href="/">Home</Link>
+          <Link sx={{ p: 1 }} href="/about-us">About Us</Link>
+          <Link sx={{ p: 1 }} href="/contact-us">Contact Us</Link>
+        </Box>
+        <Box sx={{ mt: 2 }}>
+          <Typography variant="body2">Stay Connected:</Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Link sx={{ p: 1 }} href="https://www.instagram.com/">Instagram</Link>
+            <Link sx={{ p: 1 }} href="https://www.twitter.com/">Twitter</Link>
+            <Link sx={{ p: 1 }} href="https://www.facebook.com/">Facebook</Link>
+          </Box>
+        </Box>
+      </Typography>
     </Box>
+   </Box>
+    
   )
 }
