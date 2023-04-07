@@ -16,15 +16,23 @@ export default function Landing() {
       <Card
       sx={{
         display:'flex',
-        width:'500px',
-        marginLeft:'800px',
-        mt:'50px',
+        // width:'500px',
+        // marginLeft:'800px',
+        // mt:'50px',
         // justifyContent:'right',
         // alignItems:'right',
         background:'#9fd1dd',
+        marginBottom:'50px',
 
       }}>
-        <img src={logo} style={{borderRadius:'50%', width:'60px'}}alt="" />
+        <Stack
+        direction={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 1, sm: 5, md: 100 }}
+        >
+
+        <img src={logo} style={{borderRadius:'50%', width:'60px', margin:'3px'}}alt="" />
+        <Box
+        >
         <Button
           type="submit"
           variant="contained"
@@ -73,7 +81,8 @@ export default function Landing() {
           >
             Pricing
           </Button>
-
+          </Box>
+          </Stack>
       </Card>
       <Stack
       direction={{ xs: 'column', sm: 'row' }}
@@ -160,6 +169,7 @@ export default function Landing() {
           href='register'
           >Register</Button>
         </Box>
+
       </Stack>
       <Box>
         <img src={doc}></img>
@@ -183,6 +193,6 @@ export default function Landing() {
       </Typography>
     </Box>
    </Box>
-    
+
   )
 }
