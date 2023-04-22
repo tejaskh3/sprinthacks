@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Landing from '../landing/Landing';
 // import Register from '../auth/Register';
 // import Login from '../auth/Login';
-import UserHome from './home/Home'
+import UserHome from './Home/Home'
 export default function Home() {
   return (
     <BrowserRouter>

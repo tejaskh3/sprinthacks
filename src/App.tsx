@@ -7,7 +7,7 @@ import React from 'react';
 import Landing from './components/landing/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
-import Home from './components/patient/home/Home'
+import Home from './components/patient/Home/Home'
 function App() {
   const [count, setCount] = useState(0)
 
